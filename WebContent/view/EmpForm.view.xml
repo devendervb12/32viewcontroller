@@ -1,0 +1,28 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+xmlns="sap.m" 
+xmlns:form="sap.ui.layout.form"
+xmlns:core="sap.ui.core"
+controllerName="view.EmpForm"
+>
+   <Page title="Employee Registration Form">
+       <content>
+           <form:SimpleForm>               
+               <form:title>
+                   <core:Title id="idtitle"/>
+               </form:title>
+               <form:content>
+                  <Label text="Employee Name"/>
+                  <Input id="idip"/>
+                  <Label  text="Department"></Label>
+                  <ComboBox id="idcombo">
+                    <items>
+                       <core:Item text="SAP"/>
+                       <core:Item text="ORACLE"/>
+                       <core:Item text="JAVA"/>
+                    </items>
+                  </ComboBox>
+               </form:content>   
+           </form:SimpleForm> 
+       </content>
+   </Page>
+</mvc:View>
